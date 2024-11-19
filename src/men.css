@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+/* html {
+  font-size: 62.5%;
+} */
+
+/* html, body {
+  height: 100%;
+} */
+.nbody {
+  margin-top: 0; /* Reset margin */
+  margin-left: 0; /* Reset margin */
+  font-size: 62.5%;
+  height: 100%; /* 100% of the viewport height */
+  display: flex;
+  align-items: center; /* Vertical centering */
+  justify-content: center; /* Horizontal centering */
+  font-family: "Roboto", sans-serif;
+}
+
+/* MyPage.module.css */
+.background {
+  margin: 0; /* Reset margin */
+  font-size: 62.5%;
+  height: 100vh;
+  display: flex;
+  align-items: center; /* Vertical centering */
+  justify-content: center; /* Horizontal centering */
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  overflow: auto; /* Ensure the pseudo-element does not overflow */
+}
+
+.background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../public/assets/images/GCC.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: brightness(30%); /* Reduce brightness to make image dull */
+  z-index: -1;
+  background-size:100% 100vh; /* Place the background behind the content */
+}
+
+
+@keyframes appear {
+  0% {
+    top: 0;
+    transform-origin: 5rem 0;
+  }
+  100% {
+    top: -25rem;
+    transform-origin: 5rem 25rem;
+  }
+}
+@keyframes menu-rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+@keyframes scaling {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.orbital-menu__center-pic {
+  display: flex; /* Use flexbox to align items in a row */
+  align-items: center; /* Center items vertically if they have different heights */
+  cursor: pointer; /* Show a pointer cursor on hover */
+}
+
+.orbital-menu__list {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  z-index: 999;
+}
+
+.orbital-menu__item {
+  margin: 5px 0; /* Space between items */
+}
+
+.orbital-menu__link {
+  display: flex; /* Use flexbox to align icon and text */
+  align-items: center; /* Center items vertically */
+  text-decoration: none; /* Remove default underline from links */
+}
+
+.orbital-menu__link-icon {
+  margin-right: 10px; /* Space between icon and text */
+}
+
+
+.orbital-menu {
+  position: relative;
+}
+.orbital-menu__list {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  animation: menu-rotation linear 60s infinite;
+}
+.orbital-menu__list:hover {
+  animation-play-state: paused;
+}
+.orbital-menu__list:hover .orbital-menu__link > * {
+  animation-play-state: paused;
+}
+.orbital-menu__item {
+  position: absolute;
+  animation: appear 2s forwards;
+  left: -5rem;
+  top: 0;
+  transform-origin: 5rem 0;
+}
+.orbital-menu__item:nth-child(2) {
+  animation-delay: 0.1s;
+  transform: rotate(45deg);
+}
+.orbital-menu__item:nth-child(2) .orbital-menu__link {
+  transform: rotate(-45deg);
+}
+.orbital-menu__item:nth-child(2) .orbital-menu__link:before {
+  background: #ffd24d;
+  animation-delay: 0.33s;
+}
+.orbital-menu__item:nth-child(3) {
+  animation-delay: 0.2s;
+  transform: rotate(90deg);
+}
+.orbital-menu__item:nth-child(3) .orbital-menu__link {
+  transform: rotate(-90deg);
+}
+.orbital-menu__item:nth-child(3) .orbital-menu__link:before {
+  background: #a6ff4d;
+  animation-delay: 0.66s;
+}
+.orbital-menu__item:nth-child(4) {
+  animation-delay: 0.3s;
+  transform: rotate(135deg);
+}
+.orbital-menu__item:nth-child(4) .orbital-menu__link {
+  transform: rotate(-135deg);
+}
+.orbital-menu__item:nth-child(4) .orbital-menu__link:before {
+  background: #4dff79;
+  animation-delay: 0.99s;
+}
+.orbital-menu__item:nth-child(5) {
+  animation-delay: 0.4s;
+  transform: rotate(180deg);
+}
+.orbital-menu__item:nth-child(5) .orbital-menu__link {
+  transform: rotate(-180deg);
+}
+.orbital-menu__item:nth-child(5) .orbital-menu__link:before {
+  background: #4dffff;
+  animation-delay: 1.32s;
+}
+.orbital-menu__item:nth-child(6) {
+  animation-delay: 0.5s;
+  transform: rotate(225deg);
+}
+.orbital-menu__item:nth-child(6) .orbital-menu__link {
+  transform: rotate(-225deg);
+}
+.orbital-menu__item:nth-child(6) .orbital-menu__link:before {
+  background: #4d79ff;
+  animation-delay: 1.65s;
+}
+.orbital-menu__item:nth-child(7) {
+  animation-delay: 0.6s;
+  transform: rotate(270deg);
+}
+.orbital-menu__item:nth-child(7) .orbital-menu__link {
+  transform: rotate(-270deg);
+}
+.orbital-menu__item:nth-child(7) .orbital-menu__link:before {
+  background: #a64dff;
+  animation-delay: 1.98s;
+}
+.orbital-menu__item:nth-child(8) {
+  animation-delay: 0.7s;
+  transform: rotate(315deg);
+}
+.orbital-menu__item:nth-child(8) .orbital-menu__link {
+  transform: rotate(-315deg);
+}
+.orbital-menu__item:nth-child(8) .orbital-menu__link:before {
+  background: #ff4dd2;
+  animation-delay: 2.31s;
+}
+.orbital-menu__link {
+  position: relative;
+  display: block;
+  height: 8rem;
+  width: 8rem;
+}
+.orbital-menu__link:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #ff4d4d;
+  border-radius: 50%;
+  animation: scaling linear 3s infinite;
+}
+.orbital-menu__link > * {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: menu-rotation linear 60s infinite;
+  animation-direction: reverse;
+  transition: 250ms ease all;
+}
+.orbital-menu__link-text {
+  opacity: 0;
+  text-align: center;
+  color: #fff;
+}
+.orbital-menu__link-icon {
+  color: rgba(0, 0, 0, 0.8);
+}
+.orbital-menu__link:hover:before {
+  animation-play-state: paused;
+  filter: brightness(0.7);
+}
+.orbital-menu__link-text {
+  opacity: 1;
+}
+
+.orbital-menu__center-pic {
+  position: relative;
+  width: 18rem;
+  height: 18rem;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.orbital-menu__center-pic {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%; /* Ensures it's a perfect circle */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  border: 1px solid #4dffff; /* Optional border */
+  display: flex;
+  justify-content: center; /* Horizontally centers the content */
+  align-items: center; /* Vertically centers the content */
+}
+
+.orbital-menu__center-pic h5 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.orbital-menu__center-pic:hover > h1:last-child {
+  opacity: 0;
+}

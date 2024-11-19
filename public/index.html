@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EWS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="GCC-EWS" />
+    <meta name="keywords" content="GCC-EWS">
+    <meta name="author" content="Jegan" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="./video/moment.min.js"></script>
+    <script type="text/javascript" src="./video/i2v_player.min.js"></script>
+    
+
+    <style>
+   html, body {
+    height: 100%;
+    margin: 0;
+    width: 100%; 
+    overflow-x: hidden; 
+    box-sizing: border-box; 
+}
+
+* {
+  box-sizing: inherit; /* Ensure all elements follow the box-sizing rule */
+}
+    
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0); 
+  border-radius: 10px;
+  border: 2px solid #000; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+
+
+    .report-container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .report-container > div {
+      flex: 1;
+      width: 100%;
+    }
+    .menu-btn
+    {
+      top: 2vw;
+      left:0.5vw; 
+      position: fixed;
+      z-index: 99999;
+    }
+    .menu-btn i {
+        transition: transform 2s;
+      }
+
+      .menu-btn.rotate {
+        transform: rotate(45deg); 
+      }
+
+
+      .alert-btn
+      {
+        top: 1.5vw;
+        right:5.5vw; 
+        position: fixed;
+        z-index: 99999;
+      }
+    .alert-btn i {
+        transition: transform 2s;
+      }
+
+      .alert-btn.rotate {
+        transform: rotate(45deg); 
+      }
+
+      .alert-btn:hover{
+          background-color: '#FFFFFF';
+          color: #ebf35b !important;
+          text-transform: 1px;
+          font-size: 14px;
+        }
+
+      .mcard {
+        position: absolute;
+        top: 2vw;
+        left: 2vw; 
+        height: 400px !important;
+        background-color: #222222;
+        border: 1px solid #dddddd;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 250px; 
+        z-index: 9999999;
+        overflow-y: auto;
+      }
+      .mcard::-webkit-scrollbar {
+         width: 0.5px;
+         }
+
+
+         .modal-content {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.3rem;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.modal-title {
+  margin: 0;
+}
+
+.btn-close {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 1rem;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  border-top: 1px solid #dee2e6;
+}
+
+.pointer {
+  cursor: pointer; /* Changes the cursor to a hand icon when hovering over the element */
+  color: #007bff; /* Optional: Changes the text color (e.g., blue) */
+  transition: color 0.3s ease; /* Optional: Adds a transition effect for color changes */
+}
+
+.pointer:hover {
+  color: #0056b3; /* Optional: Changes the text color on hover */
+}
+
+.first_page_image
+{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border:10px;
+  top:0px;
+  bottom: 0px;
+  left:0px;
+  right:0px;
+  display: flex;
+  padding: 1px;
+}
+
+
+body {
+  margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #373a3c;
+    text-align: left;
+    background-image: url("../assets/images/disaster.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+.marquee {
+    height: 700px; 
+    left: 50px;/* Height of the container */
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    line-height: 50px;
+}
+
+.marquee span {
+    display: inline-block;
+    white-space: nowrap;
+    position: absolute;
+    width: 100%;
+    top: 100%; /* Start position */
+    animation: marquee 10s linear infinite;
+}
+.text-rectagle{
+  transform: rotate(90deg);
+}
+.menu-top{
+  background-color:#203864;
+    padding: 2,2,2,2;
+    border :1px, solid, #ffffff;
+    justify-content: center;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.menu-top:hover{
+  background-color: '#FFFFFF';
+  color: #000000 !important;
+  text-transform: 1px;
+  font-size: 14px;
+}
+
+.menu-side{
+  background-color:#203864;
+  padding: 7px;
+  left:0;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: -13px;
+  border-radius: 7px;
+  font-size:15px;
+}
+
+.menu-side:hover{
+  background-color: rgb(220, 220, 158) !important;
+  color: #000000 !important;
+  text-transform: 1px;
+  font-size: 16px;
+}
+
+.sele{
+  background-color: rgb(220, 220, 158) !important;
+  color: #000000 !important;
+  text-transform: 1px;
+  font-size: 14px;
+}
+
+@keyframes marquee {
+    from {
+        top: -100%;
+    }
+    to {
+        top: 200%;
+    }
+}
+</style>
+</head>
+
+  <body >
+    <div id="root"></div>
+    
+<script src="assets/js/vendor-all.min.js" />
+<script src="assets/js/plugins/bootstrap.min.js" />
+<script src="assets/js/ripple.js" />
+<script src="assets/js/pcoded.min.js" />
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest" />
+<script src="assets/js/plugins/gmaps.min.js" />
+<script src="assets/js/pages/google-maps.js" />
+  </body>
+</html>

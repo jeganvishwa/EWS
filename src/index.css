@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.tablesborders td {
+  width: 2px;
+  border: 1px solid black; /* Add a border to make the width visible */
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.responsive-height {
+  height: 88vh;
+  overflow-y: auto;
+}
+
+.zoom-table .zoom-cell {
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.table-pointer
+{
+  cursor: pointer;
+}
+
+.zoom-table .zoom-cell:hover {
+  transform: scale(1.5); /* Scale up the cell */
+  background-color: #f0f8ff; /* Optional: Add a background highlight */
+  color: blue;
+  z-index: 1; /* Ensure the cell stays above others */
+  position: relative; /* Required for z-index to work */
+}
+
+.table tbody tr {
+  transition: transform 0.5s ease-in-out, filter 0.2s ease-in-out;
+}
+
+/* Zoomed row styles */
+.zoom-row {
+  transform: scale(1.02); /* Adjust the zoom level */
+  background-color: #f0f8ff; /* Optional: Highlight zoomed row */
+  z-index: 1; /* Ensure the zoomed row appears above others */
+  position: relative; /* Required for z-index */
+}
+
+/* Blurred rows */
+.blurred-rows tr {
+  filter: blur(3px); /* Apply blur to all rows */
+}
+
+/* Disable blur for the zoomed row */
+.zoom-row {
+  filter: none !important;
+}
+@media (max-width: 768px) {
+  .responsive-height {
+      height: 40vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .menu_first {
+      display: none;
+  }
+}
+
+
+

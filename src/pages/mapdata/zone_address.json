@@ -1,0 +1,31 @@
+{"data":[{"region":"North", "Zone":"1", "lat":"13.15627069", "lan":"80.30195825","address":"NO: 945, T.H ROAD, THIRUVOTTIYUR, CH-19.","desi":"Zonal Officer","off1":"K.M. Saghubar Hussain","cont":"9445190001","ee_name":"Babu","ee_num":"9445190102","ee_name1":"K.M. Saghubar Hussain","ee_number":"9445190021","adesi":"Executive Engineer","nodal":"Dinesh","acont":"9962333959"},
+
+{"region":"North", "Zone":"2", "lat":"13.16680000", "lan":"80.25830000","address":"NO.127, PADASALAI STREET,MANALI, CHENNAI-68", "desi":"Zonal Officer","off1":"R. Govindarasu","cont":"9445190002","ee_name":"K. Devendiran","ee_num":"7200129107","ee_name1":"Pradeep Kumar","ee_number":"9445190022","adesi":"Executive Engineer","nodal":"Devendran EE","acont":"7200129107"},
+
+{"region":"North", "Zone":"3", "lat":"13.14760000", "lan":"80.23080000","address":"THATTANKULAM ROAD,MADHAVARAM,CHENNAI600060","desi":"Zonal Officer","adesi":"Executive Engineer","off1":"N. Thirumurugan","cont":"9445190003","ee_name":"Karthikeyan","ee_num":"9445190023","ee_name1":"V. Chinnadurai","ee_number":"9445190482","nodal":"Jayakumar","acont":"9790955213"},
+
+{"region":"North", "Zone":"4", "lat":"13.12098403", "lan":"80.28656237","address":"T.H ROAD,TONDIARPET,CHENNAI-21.","desi":"Zonal Officer","off1":"N. Viswanathan","cont":"9445190004","ee_name":"Harinath i/c","ee_num":"9445190940","ee_name1":"C.Thirunavukarasu","ee_number":"9445190024","nodal":"Bhuvana","acont":"9003050173"},
+
+{"region":"North", "Zone":"5", "lat":"13.10461737", "lan":"80.27453169","address":"BASIN BRIDGE ROAD, OLD WASHERMENPET, CHENNAI-21","desi":"Zonal Officer","off1":"Dr.Farida Banu","cont":"9445190005","ee_name":"G.Chokkalingampillai","ee_num":"9445190461","ee_name1":"Logeshwaran","ee_number":"9445190025","nodal":"Dinesh","acont":"9789803485"},
+
+{"region":"Central", "Zone":"6", "lat":"13.09780595", "lan":"80.25667043","address":"No.158, STRAHANS ROAD, OTTERI, CHENNAI-12","desi":"Zonal Officer","off1":"Murugan","cont":"9445190006","ee_name":"Senthilnathan","ee_num":"9445190038","ee_name1":"R.Saravanan","ee_number":"9445190026","nodal":"Zone 6 PC","acont":"8667854925"},
+
+{"region":"Central", "Zone":"7", "lat":"13.10627518", "lan":"80.15293446","address":"MTH ROAD , AMBATTUR, CHENNAI 53.","desi":"Zonal Officer","off1":"G.Tamilselvan","cont":"9445190007","ee_name":"M.Kumaraswamy","ee_num":"9445194759","ee_name1":"Sathish Kumar","ee_number":"9445190027","nodal":"Gomathi AEE","acont":"9003236256"},
+
+{"region":"Central", "Zone":"8", "lat":"13.07710000", "lan":"80.22570000","address":"ZONAL OFFICE, PULLA AVENUE, CHENNAI - 30","desi":"Zonal Officer","off1":"K. Sundararajan i/c","cont":"9445190008","ee_name":"Kathirvel","ee_num":"9445467320","ee_name1":"Padmanabham","ee_number":"9445190028","nodal":"Sofia Drawing Section","acont":"7358326814"},
+
+{"region":"Central", "Zone":"9", "lat":"13.05531209", "lan":"80.23923616","address":"LAKE AREA 4TH CROSS STREET,CHENNAI-600034","desi":"Zonal Officer","off1":"S.Murugadoss","cont":"9445190009","ee_name":"Muthaiah i/c","ee_num":"9445190864","ee_name1":"Pugazenthi","ee_number":"9445190029","nodal":"Anand Drawing Section","acont":"7092327645"},
+
+{"region":"Central", "Zone":"10", "lat":"13.05190000", "lan":"80.22000000","address":"D.NO.117, N.S.K.SALAI, KODAMBAKKAM, CHENNAI-24","desi":"Zonal Officer","off1":"P.Murugesan","cont":"9445190010","ee_name":"V.Periyasami","ee_num":"9445190030","ee_name1":"Eniyan","ee_number":"9445191466","nodal":"Seshadri Drawing Section","acont":"9962862723"},
+
+{"region":"South", "Zone":"11", "lat":"13.04080941", "lan":"80.17203384","address":"ARCOT ROAD, VALASARAVAKKAM, CHENNAI-600087","desi":"Zonal Officer","off1":"K.Umapathy","cont":"9445190011","ee_name":"A.Vijaya Baskar","ee_num":"9445477702","ee_name1":"Banukumar","ee_number":"9445190031","nodal":"Malarvizhi AEE","acont":"9940589255"},
+
+{"region":"South", "Zone":"12", "lat":"13.00528885", "lan":"80.20237854","address":"NEW STREET,ALANDUR,CHENNAI 60016","desi":"Zonal Officer","off1":"P.S.Srinivasan","cont":"9445190012","ee_name":"K.Pandian","ee_num":"9445190032","ee_name1":"Suresh Kumar","ee_number":"9445190037","nodal":"Easwar AEE","acont":"9840614123"},
+
+{"region":"South", "Zone":"13", "lat":"13.00484747", "lan":"80.25709541","address":"DR.MUTHULAKSHMI SALAI,ADYAR, CHENNAI-20","desi":"Zonal Officer","off1":"P.V.Srinivasan","cont":"9445190013","ee_name":"Rajasekar","ee_num":"9445910926","ee_name1":"Rajasekar","ee_number":"9445910926","nodal":"Jaqlin AEE","acont":"9444923255"},
+
+{"region":"South", "Zone":"14", "lat":"12.97230000", "lan":"80.19370000","address":"6/64 PUZHUTHIVAKKAM MAIN ROAD, PUZHUTHIVAKKAM,CHENNAI-91","desi":"Zonal Officer","off1":"T.Karunakaran","cont":"9445190014","ee_name":"Murali","ee_num":"9445190034","ee_name1":"Sundaraj","ee_number":"9445026083","nodal":"Saravana Kumari AEE","acont":"9962622253"},
+
+{"region":"South", "Zone":"15", "lat":"12.89617769", "lan":"80.22719797","address":"NO.161. RAJIV GANDHI ,SALAI SHOLINGANALLUR,CH-119","desi":"Zonal Officer","off1":"D.Rajasekar","cont":"9445190015","ee_name":"K.Vetri Ezhilan","ee_num":"9445190035","ee_name1":"M.P.Thanigaivelan","ee_number":"9445191480","nodal":"NIl","acont":"000"}
+
+]}
